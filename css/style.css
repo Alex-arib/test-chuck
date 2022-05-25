@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+html,body{
+    height: 100%;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+a {
+    color: #8EA7FF!important;
+}
+
+.bd-heading a::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: .25rem;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%25230d6efd' viewBox='0 0 16 16'%3E%3Cpath d='M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1H2a2 2 0 0 1 2-2z'/%3E%3Cpath d='M2 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2z'/%3E%3Cpath fill-rule='evenodd' d='M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z'/%3E%3C/svg%3E");
+    background-size: 1em;
+}
+.main {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* stylelint-disable-next-line selector-max-universal */
+.bd-heading + div > * + * {
+    margin-top: 3rem;
+}
+
+/* Table of contents */
+.bd-aside a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: .3125rem;
+    color: rgba(0, 0, 0, .65);
+}
+
+.bd-aside a:hover,
+.bd-aside a:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: rgba(121, 82, 179, .1);
+}
+
+.bd-aside .active {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .85);
+}
+
+.bd-aside .btn {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+}
+
+.bd-aside .btn:hover,
+.bd-aside .btn:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: rgba(121, 82, 179, .1);
+}
+
+.bd-aside .btn:focus {
+    box-shadow: 0 0 0 1px rgba(121, 82, 179, .7);
+}
+
+.bd-aside .btn::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+
+    /* rtl:raw:
+    transform: rotate(180deg) translateX(-2px);
+    */
+    transform-origin: .5em 50%;
+}
+
+.bd-aside .btn[aria-expanded="true"]::before {
+    transform: rotate(90deg)/* rtl:ignore */;
+}
+
+
+/* Examples */
+.scrollspy-example {
+    height: 200px;
+}
+header.bd-header {
+    position: relative;
+}
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+
+}
+.top_h{
+    padding-top: 100px;
+    font-weight: 700;
+}
+form {
+    padding: 30px 0;
+}
+button#submit {
+    background: linear-gradient(90.55deg, #8EA7FF 0%, #7291FF 100%);
+    border-radius: 10px;
+    border: none;
+    padding: 9px 41px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.form-check {
+    margin-bottom: 10px;
+}
+.btn-secondary {
+    color: #ABABAB;
+    background-color: #ffffff;
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+input.form-control {
+    border: 2px solid #333333;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #ABABAB;
+    margin: 5px 0;
+}
+.form-check-input:checked {
+    background-color: #333;
+    border-color: #333;
+}
+.item_ch {
+    display: flex;
+    background: #F8F8F8;
+    border-radius: 20px;
+    padding: 50px 30px;
+    margin-bottom: 20px;
+
+}
+.icon_ch {
+    float: left;
+    width: 60px;
+    height: auto;
+}
+.icon_ch span {
+    background: url(../img/message.svg) #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.id_ch {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
+    margin-bottom: 10px;
+}
+.text_ch {
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+}
+.date_ch {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
+    margin-top: 20px;
+}
+.category_ch span {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333333;
+    background: #fff;
+    padding: 6px 15px;
+    border-radius: 6px;
+}
+.category_ch {
+    float: right;
+    margin-top: -25px;
+}
+.info_ch {
+    padding-right: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.favorite_ch {
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    background: url(../img/heart.svg);
+    width: 20px;
+    height: 17px;
+    cursor: pointer;
+
+}
+.favorite_ch.active {
+    background: url(../img/heart_a.svg);
+}
+
+#result_favorites .text_ch {
+    font-size: 14px;
+    line-height: 20px;
+}
+#result_favorites .item_ch {
+    background: #FFFFFF;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+#result_favorites .icon_ch span {
+    background: url(../img/message.svg) #F8F8F8;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#result_favorites .category_ch span {
+    background: #f8f8f8;
+}
+.favorite_h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ABABAB;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.menu-c {
+    display: none;
+}
+
+/* Layout */
+@media (min-width: 1199px) {
+    body {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 4fr 1fr;
+        gap: 1rem;
+    }
+
+    .bd-header {
+        position: fixed;
+        top: 0;
+        /* rtl:begin:ignore */
+        right: 0;
+        left: 0;
+        /* rtl:end:ignore */
+        z-index: 1030;
+        grid-column: 1 / span 3;
+    }
+
+    .bd-aside,
+    .bd-cheatsheet {
+        padding-top: 0rem;
+    }
+
+    /**
+     * 1. Too bad only Firefox supports subgrids ATM
+     */
+    .bd-cheatsheet,
+    .bd-cheatsheet section,
+    .bd-cheatsheet article {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 4fr;
+        grid-column: 1 / span 2;
+        gap: inherit; /* 1 */
+    }
+
+    .bd-aside {
+        grid-area: 1 / 3;
+        scroll-margin-top: 4rem;
+        min-width: 480px;
+    }
+
+    .bd-cheatsheet section,
+    .bd-cheatsheet section > h2 {
+        top: 2rem;
+        scroll-margin-top: 2rem;
+    }
+
+    .bd-cheatsheet section > h2::before {
+        position: absolute;
+        /* rtl:begin:ignore */
+        top: 0;
+        right: 0;
+        bottom: -2rem;
+        left: 0;
+        /* rtl:end:ignore */
+        z-index: -1;
+        content: "";
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) calc(100% - 3rem), rgba(255, 255, 255, .01));
+    }
+
+    .bd-cheatsheet article,
+    .bd-cheatsheet .bd-heading {
+        top: 8rem;
+        scroll-margin-top: 8rem;
+    }
+
+    .bd-cheatsheet .bd-heading {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu-c {
+        display: block;
+    }
+    aside.bd-aside, aside.bd-aside .favorite_h2 {
+        display: none;
+    }
+    .active-bar aside.bd-aside {
+        display: block;
+    }
+    .active-bar aside.bd-aside .close {
+        display: block!important;
+    }
+    .close {
+        text-align: right;
+        padding: 40px 0px 20px;
+    }
+    .top_h {
+        padding-top: 60px;
+    }
+    aside.bd-aside {
+        position: fixed;
+        max-width: 480px;
+        right: 0;
+        height: 100%;
+        background: #F8F8F8;
+        z-index: 9;
+        overflow-x: scroll;
+    }
+    .active-bar .bd-cheatsheet.container-fluid.bg-body:before {
+        content: '';
+        position: fixed;
+        background: rgb(51 51 51 / 44%);
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}
