@@ -34,11 +34,13 @@ $(function () {
     function get_favorites() {
         $("#result_favorites").html('');
         var retrievedObject = localStorage;
-
+        
         $.each(retrievedObject , function(index, res) {
             var json_res = function(s){ try {  return JSON.parse(res); } catch (e) { return false; }}();
-            if(index == json_res.id ) {
-                $("#result_favorites").append(list(json_res.id,json_res.value, json_res.updated_at,json_res.categories,1));
+            if(json_res != null) {
+                if (index == json_res.id) {
+                    $("#result_favorites").append(list(json_res.id, json_res.value, json_res.updated_at, json_res.categories, 1));
+                }
             }
         });
     }
